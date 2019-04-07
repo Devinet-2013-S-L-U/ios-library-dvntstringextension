@@ -20,11 +20,11 @@ extension String
         return self.localize(key, comment: "")
     }
     
-    public static func localize(_ key: String, from class: AnyClass, for resource: String, of type: String)
+    public static func localize(_ key: String, from aClass: AnyClass, for resource: String, of type: String) -> String
     {
-        let path = Bundle(for: class).path(forResource: resource, ofType: type)!
+        let path = Bundle(for: aClass).path(forResource: resource, ofType: type)!
         let bundle = Bundle(path: path) ?? Bundle.main
-        return NSLocalizedString(key, bundle: bundle, comment: "").capitalized
+        return NSLocalizedString(key, bundle: bundle, comment: "")
     }
     
     public func removingWhitespaces() -> String

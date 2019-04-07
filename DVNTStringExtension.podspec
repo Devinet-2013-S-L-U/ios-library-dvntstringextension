@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name             = 'DVNTStringExtension'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'An amazing library that etends String\'s Swift class.'
   s.description      = 'This library allows you to easily translate srings and remove white spaces.'
   s.homepage         = 'https://www.devinet.es'
