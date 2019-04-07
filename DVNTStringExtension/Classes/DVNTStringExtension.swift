@@ -20,7 +20,7 @@ extension String
         return self.localize(key, comment: "")
     }
     
-    public static func localize(_ key: String, from aClass: AnyClass, for resource: String, of type: String) -> String
+    public static func localize(_ key: String, fromClass aClass: AnyClass, forResource resource: String, ofType type: String) -> String
     {
         let path = Bundle(for: aClass).path(forResource: resource, ofType: type)!
         let bundle = Bundle(path: path) ?? Bundle.main
