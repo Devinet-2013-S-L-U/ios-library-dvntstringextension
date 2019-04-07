@@ -20,6 +20,13 @@ extension String
         return self.localize(key, comment: "")
     }
     
+    public static func localize(_ key: String, from class: AnyClass, for resource: String, of type: String)
+    {
+        let path = Bundle(for: class).path(forResource: resource, ofType: type)!
+        let bundle = Bundle(path: path) ?? Bundle.main
+        return NSLocalizedString(key, bundle: bundle, comment: "").capitalized
+    }
+    
     public func removingWhitespaces() -> String
     {
         return components(separatedBy: .whitespaces).joined()
