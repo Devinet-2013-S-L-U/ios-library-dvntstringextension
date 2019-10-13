@@ -1,6 +1,0 @@
-use_frameworks!
-target 'DVNTStringExtension_Tests' do
-  pod 'DVNTStringExtension', :path => '../'
-  
-  
-end
