@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name             = 'DVNTStringExtension'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = 'An amazing library that etends String\'s Swift class.'
   s.description      = 'This library allows you to easily translate srings and remove white spaces.'
   s.homepage         = 'https://www.devinet.es'
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.swift_versions   = ['3.0', '4.0', '4.1', '4.2', '5.0']
   s.source           = { :git => 'https://bitbucket.org/Devinet_Team/ios-library-dvntstringextension.git', :tag => s.version.to_s }
   s.frameworks       = 'UIKit'
-  s.source_files     = 'DVNTStringExtension/Classes/**/*'
-  s.exclude_files    = 'DVNTStringExtension/**/*.plist'
+  s.source_files     = 'Sources/DVNTStringExtension/Classes/**/*'
+  s.exclude_files    = 'Sources/DVNTStringExtension/**/*.plist'
   
 end
