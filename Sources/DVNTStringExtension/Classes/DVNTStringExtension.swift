@@ -27,6 +27,12 @@ extension String
         return NSLocalizedString(key, bundle: bundle, comment: "")
     }
     
+    public static func localize(_ key: String, fromBundle bundle: Bundle, withComment comment: String?) -> String
+    {
+        return NSLocalizedString(key, bundle: bundle, comment: comment)
+    }
+
+    
     public func removingWhitespaces() -> String
     {
         return components(separatedBy: .whitespaces).joined()
